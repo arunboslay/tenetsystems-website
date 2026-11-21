@@ -47,6 +47,9 @@
   .body { font-size: 1.15rem; margin: 0 0 26px; }
   .body.pricing { padding-left: 18px; border-left: 3px solid var(--sage); }
   .closing { font-family: Georgia, "Times New Roman", serif; font-style: italic; color: var(--muted); font-size: 1.1rem; margin-top: 40px; }
+  .contact { margin-top: 28px; font-size: 1.05rem; }
+  .contact a { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .abn { font-size: .78rem; margin-top: 4px; opacity: .8; }
   footer a { color: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
   footer { text-align: center; font-size: .85rem; color: var(--muted); padding: 24px 20px; border-top: 1px solid var(--line); }
   @media (max-width: 520px) {
@@ -75,9 +78,10 @@
     <p class="body">We are building AI-backed software that helps people do more, like helping a child get started with their studies.</p>
     <p class="body pricing">Our prices follow what the work costs, not what the market will bear. Popularity is never a reason to charge more.</p>
     <p class="closing">The website is still being built. The mission is already set.</p>
+    <p class="contact">Say hello: <a href="mailto:hello@tenetsystems.com.au">hello@tenetsystems.com.au</a></p>
   </div>
 </main>
-<footer>&copy; <span id="y">2026</span> Tenet Systems &middot; ABN 82 382 210 822 &middot; <a href="mailto:hello@tenetsystems.com.au">hello@tenetsystems.com.au</a> &middot; Melbourne, Australia</footer>
+<footer><div>&copy; <span id="y">2026</span> Tenet Systems &middot; Melbourne, Australia</div><div class="abn">ABN 82 382 210 822</div></footer>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
