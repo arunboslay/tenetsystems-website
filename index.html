@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenet Systems</title>
+<meta name="description" content="Tenet Systems builds AI-backed software that helps people do more. Website in development.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23132a3e'/%3E%3Crect x='14' y='38' width='54' height='14' rx='7' fill='%23f3efe7'/%3E%3Crect x='34' y='38' width='14' height='50' rx='7' fill='%23f3efe7'/%3E%3Cpath d='M78.0 11.0 L81.9 20.7 L92.3 21.4 L84.3 28.0 L86.8 38.1 L78.0 32.6 L69.2 38.1 L71.7 28.0 L63.7 21.4 L74.1 20.7Z' fill='%23c9a96e' stroke='%23c9a96e' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #132a3e;        /* deep navy: trust, calm */
+    --ink-2: #1c3a52;
+    --paper: #f6f3ee;      /* warm off-white */
+    --text: #1f2a33;
+    --muted: #5d6b75;
+    --accent: #c9a96e;     /* soft brass: quiet confidence */
+    --sage: #7d9a8c;       /* muted green: care */
+    --line: #e2ddd3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--paper); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; min-height: 100vh; display: flex; flex-direction: column;
+  }
+  header {
+    background: radial-gradient(120% 140% at 85% 0%, var(--ink-2) 0%, var(--ink) 60%);
+    color: #f3efe7; padding: 72px 20px 80px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; width: 100%; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 56px; }
+  .mark { width: 46px; height: 46px; flex: none; }
+  .name { font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; letter-spacing: .01em; }
+  .status {
+    margin-left: auto; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--accent); border: 1px solid rgba(201,169,110,.45); border-radius: 999px; padding: 4px 12px;
+    white-space: nowrap;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif; font-weight: normal;
+    font-size: clamp(2rem, 5.5vw, 3.1rem); line-height: 1.2; margin: 0; letter-spacing: -0.01em;
+  }
+  h1 em { font-style: italic; color: var(--accent); }
+  .rule { width: 56px; height: 2px; background: var(--accent); margin: 32px 0 0; }
+  main { flex: 1; padding: 64px 20px 72px; }
+  .body { font-size: 1.15rem; margin: 0 0 26px; }
+  .body.pricing { padding-left: 18px; border-left: 3px solid var(--sage); }
+  .closing { font-family: Georgia, "Times New Roman", serif; font-style: italic; color: var(--muted); font-size: 1.1rem; margin-top: 40px; }
+  footer { text-align: center; font-size: .85rem; color: var(--muted); padding: 24px 20px; border-top: 1px solid var(--line); }
+  @media (max-width: 520px) {
+    .brand { flex-wrap: wrap; }
+    .status { margin-left: 0; font-size: .7rem; }
+    header { padding: 48px 16px 56px; }
+    main { padding: 48px 16px 56px; }
+    .brand { margin-bottom: 40px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 104 100" aria-hidden="true"><rect x="8" y="34" width="64" height="16" rx="8" fill="#f3efe7"/><rect x="32" y="34" width="16" height="60" rx="8" fill="#f3efe7"/><path d="M84.0 5.0 L88.4 15.9 L100.2 16.7 L91.1 24.3 L94.0 35.8 L84.0 29.5 L74.0 35.8 L76.9 24.3 L67.8 16.7 L79.6 15.9Z" fill="#c9a96e" stroke="#c9a96e" stroke-width="3" stroke-linejoin="round"/></svg>
+      <div class="name">Tenet Systems</div>
+      <div class="status">Website in development</div>
+    </div>
+    <h1>Software should leave people <em>better off</em> than it found them.</h1>
+    <div class="rule"></div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <p class="body">We are building AI-backed software that helps people do more, like helping a child get started with their studies.</p>
+    <p class="body pricing">Our prices follow what the work costs, not what the market will bear. Popularity is never a reason to charge more.</p>
+    <p class="closing">The website is still being built. The mission is already set.</p>
+  </div>
+</main>
+<footer>&copy; <span id="y">2026</span> Tenet Systems &middot; Melbourne, Australia</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
